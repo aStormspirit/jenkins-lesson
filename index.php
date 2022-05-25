@@ -2,11 +2,21 @@
 <html>
 <?php
 setlocale(LC_ALL, "russian");
-$time = strftime('%H');
+$time = (int)strftime('%H');
 $day = strftime('%d');
 $mon = strftime('%B');
 //$mon = iconv("windows-1251", "UTF-8");
 $year = strftime('%Y');
+
+if($time > 9 and $time < 13){
+  $hello = "Утро";
+}
+if($time > 13 and $time < 18){
+  $hello = "День";
+}
+if($time > 18 and $time < 23){
+  $hello = "Вечер";
+}
 ?>
 <head>
   <title>Сайт нашей школы</title>
@@ -25,7 +35,7 @@ $year = strftime('%Y');
 
   <div id="content">
     <!-- Заголовок -->
-    <h1>Добро пожаловать на наш сайт!</h1>
+    <h1><?php echo "Добрый $hello" ?> наш сайт!</h1>
     <!-- Заголовок -->
     <!-- Область основного контента -->
     <h3>Зачем мы ходим в школу?</h3>
