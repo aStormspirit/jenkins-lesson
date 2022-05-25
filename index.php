@@ -15,7 +15,6 @@ $year = strftime('%Y');
 </head>
 
 <body>
-  <?php echo mb_detect_encoding($mon); ?>
 
   <div id="header">
     <!-- Верхняя часть страницы -->
