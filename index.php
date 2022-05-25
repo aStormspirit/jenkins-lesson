@@ -66,7 +66,7 @@ $year = strftime('%Y');
   </div>
   <div id="footer">
     <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; <?php echo $year ?>
+    &copy; Супер Мега Веб-мастер, 2000 &ndash; <?php echo $year; ?>
     <!-- Нижняя часть страницы -->
   </div>
 </body>
