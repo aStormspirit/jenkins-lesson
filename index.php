@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <?php
-setlocale(LC_ALL, "ru-ru");
+setlocale(LC_ALL, "russian");
+$time = strftime('%H')
 $day = strftime('%d');
 $mon = strftime('%B');
-$mon = iconv("windows-1251", "UTF-8");
+//$mon = iconv("windows-1251", "UTF-8");
 $year = strftime('%Y');
 ?>
 <head>
@@ -14,6 +15,7 @@ $year = strftime('%Y');
 </head>
 
 <body>
+  <?php echo mb_detect_encoding($mon); ?>
 
   <div id="header">
     <!-- Верхняя часть страницы -->
