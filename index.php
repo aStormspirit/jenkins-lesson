@@ -2,7 +2,7 @@
 <html>
 <?php
 setlocale(LC_ALL, "russian");
-$time = strftime('%H')
+$time = strftime('%H');
 $day = strftime('%d');
 $mon = strftime('%B');
 //$mon = iconv("windows-1251", "UTF-8");
