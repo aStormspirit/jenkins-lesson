@@ -8,10 +8,10 @@ $mon = strftime('%B');
 //$mon = iconv("windows-1251", "UTF-8");
 $year = strftime('%Y');
 
-if($time > 9 and $time < 13){
+if($time > 9 and $time < 11){
   $hello = "Утро";
 }
-if($time > 13 and $time < 18){
+if($time > 11 and $time < 18){
   $hello = "День";
 }
 if($time > 18 and $time < 23){
