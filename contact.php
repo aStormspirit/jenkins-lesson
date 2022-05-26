@@ -25,11 +25,10 @@
     $size = ini_get('post_max_size');
     $last = $size{ strlen( $size ) - 1 };
     $size = (int) $size;
-    $type = gettype($size); 
-    switch($last){
-      case 'G': $size * 1024;
-      case 'M': $size * 1024;
-      case 'K': $size * 1024;
+    switch(strtoupper($last)){
+      case 'G': $size *= 1024;
+      case 'M': $size *= 1024;
+      case 'K': $size *= 1024;
     }
     ?>
     <h3>Адрес</h3>
