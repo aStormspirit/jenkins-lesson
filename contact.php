@@ -24,7 +24,8 @@
     <?php
     $size = ini_get('post_max_size');
     $last = $size{ strlen( $size ) - 1 };
-    $size = (int)$size;
+    $size = (int) $size;
+    $type = gettype($size); 
     switch($last){
       case 'G': $size * 1024;
       case 'M': $size * 1024;
@@ -48,6 +49,7 @@
     </form>
     <!-- Область основного контента -->
     <?php echo "максимальный $last размер отправляемых данных $size байт"; ?>
+    <?php echo "$type"; ?>
   </div>
   <div id="nav">
     <h2>Навигация по сайту</h2>
