@@ -58,18 +58,28 @@ if($time > 18 and $time < 23){
     <!-- Навигация -->
     <h2>Навигация по сайту</h2>
     <!-- Меню -->
+    <?php
+    $left_menu = [
+      ['link' => 'Домой', 'href' => 'index.php'],
+      ['link' => 'О нас', 'href' => 'about.php'],
+      ['link' => 'Контакты', 'href' => 'contact.php'],
+      ['link' => 'Таблица умножения', 'href' => 'table.php'],
+      ['link' => 'Калькулятор', 'href' => 'calc.php'],
+    ]
+    ?>
     <ul>
-      <li><a href='index.php'>Домой</a>
+      <li><a href='<?=$left_menu[0]['href'] ?>'><?=$left_menu[0]['link'] ?></a>
       </li>
-      <li><a href='about.php'>О нас</a>
+      <li><a href='<?=$left_menu[1]['href'] ?>'><?=$left_menu[1]['link'] ?></a>
       </li>
-      <li><a href='contact.php'>Контакты</a>
+      <li><a href='<?=$left_menu[2]['href'] ?>'><?=$left_menu[2]['link'] ?></a>
       </li>
-      <li><a href='table.php'>Таблица умножения</a>
+      <li><a href='<?=$left_menu[3]['href'] ?>'><?=$left_menu[3]['link'] ?></a>
       </li>
-      <li><a href='calc.php'>Калькулятор</a>
+      <li><a href='<?=$left_menu[4]['href'] ?>'><?=$left_menu[4]['link'] ?></a>
       </li>
     </ul>
+    
     <!-- Меню -->
     <!-- Навигация -->
   </div>
